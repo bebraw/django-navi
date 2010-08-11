@@ -9,6 +9,7 @@ and translation of URLs and navigation, altogether.
 ## Project Structure
 
 A project using this plugin may be structured as follows:
+
 - /&lt;django project&gt;
 - /&lt;django project&gt;/app
 - /&lt;django project&gt;app/__init__.py
@@ -72,6 +73,7 @@ As mentioned earlier the application structure has been designed to be
 hierarchical. The structure is inferred directly from Python packaging.
 
 Suppose you have defined your app as follows:
+
 - /app/primary
 - /app/primary/blog
 - /app/primary/gallery
@@ -89,6 +91,7 @@ Items will be ordered alphabetically by default. In this case it has been
 decided that gallery should appear within the structure first.
 
 I have listed pages and other configuration options below:
+
 - hidden_pages - Tuple of pages, marked hidden (this information can be used
 while generating user interface for navigation)
 - pages - Tuple of pages, all visible by default
