@@ -9,14 +9,14 @@ and translation of URLs and navigation, altogether.
 ## Project Structure
 
 A project using this plugin may be structured as follows:
-* /&lt;django project&gt;
-* /&lt;django project&gt;/app
-* /&lt;django project&gt;app/__init__.py
-* /&lt;django project&gt;/app/models.py
-* /&lt;django project&gt;/app/urls.py
-* /&lt;django project&gt;/app/views.py
-* /&lt;django project&gt;/app/templates
-* /&lt;django project&gt;/app/&lt;base&gt;/&lt;base&gt;/.../[__init__.py, views.py]
+* &lt;django project&gt;
+* &lt;django project&gt;/app
+* &lt;django project&gt;app/__init__.py
+* &lt;django project&gt;/app/models.py
+* &lt;django project&gt;/app/urls.py
+* &lt;django project&gt;/app/views.py
+* &lt;django project&gt;/app/templates
+* &lt;django project&gt;/app/&lt;base&gt;/&lt;base&gt;/.../[__init__.py, views.py]
 
 ## Plugin Initialization
 
