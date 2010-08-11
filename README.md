@@ -9,14 +9,14 @@ and translation of URLs and navigation, altogether.
 ## Project Structure
 
 A project using this plugin may be structured as follows:
-* &lt;django project&gt;
-* &lt;django project&gt;/app
-* &lt;django project&gt;app/__init__.py
-* &lt;django project&gt;/app/models.py
-* &lt;django project&gt;/app/urls.py
-* &lt;django project&gt;/app/views.py
-* &lt;django project&gt;/app/templates
-* &lt;django project&gt;/app/&lt;base&gt;/&lt;base&gt;/.../[__init__.py, views.py]
+- /&lt;django project&gt;
+- /&lt;django project&gt;/app
+- /&lt;django project&gt;app/__init__.py
+- /&lt;django project&gt;/app/models.py
+- /&lt;django project&gt;/app/urls.py
+- /&lt;django project&gt;/app/views.py
+- /&lt;django project&gt;/app/templates
+- /&lt;django project&gt;/app/&lt;base&gt;/&lt;base&gt;/.../[__init__.py, views.py]
 
 ## Plugin Initialization
 
@@ -72,10 +72,10 @@ As mentioned earlier the application structure has been designed to be
 hierarchical. The structure is inferred directly from Python packaging.
 
 Suppose you have defined your app as follows:
-* /app/primary
-* /app/primary/blog
-* /app/primary/gallery
-* /app/secondary
+- /app/primary
+- /app/primary/blog
+- /app/primary/gallery
+- /app/secondary
 
 As usual each package should contain __init__.py to mark it as a package. In
 this case __init__ is used to provide additional configuration as well.
@@ -89,13 +89,13 @@ Items will be ordered alphabetically by default. In this case it has been
 decided that gallery should appear within the structure first.
 
 I have listed pages and other configuration options below:
-* hidden_pages - Tuple of pages, marked hidden (this information can be used
+- hidden_pages - Tuple of pages, marked hidden (this information can be used
 while generating user interface for navigation)
-* pages - Tuple of pages, all visible by default
-* order - Ordering of children bases. Given as a tuple.
-* exclusive_to - Django user groups to which the visibility of the base has
+- pages - Tuple of pages, all visible by default
+- order - Ordering of children bases. Given as a tuple.
+- exclusive_to - Django user groups to which the visibility of the base has
 been restricted to. Given as a tuple.
-* page_itself - Flag to set a base to be a page itself (XXX: eliminate this!)
+- page_itself - Flag to set a base to be a page itself (XXX: eliminate this!)
 
 ## Navigation User Interface
 
