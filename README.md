@@ -12,12 +12,12 @@ A project using this plugin may be structured as follows:
 
 - /&lt;django project&gt;
 - /&lt;django project&gt;/app
-- /&lt;django project&gt;app/__init__.py
+- /&lt;django project&gt;/app/\__init__\.py
 - /&lt;django project&gt;/app/models.py
 - /&lt;django project&gt;/app/urls.py
 - /&lt;django project&gt;/app/views.py
 - /&lt;django project&gt;/app/templates
-- /&lt;django project&gt;/app/&lt;base&gt;/&lt;base&gt;/.../[__init__.py, views.py]
+- /&lt;django project&gt;/app/&lt;base&gt;/&lt;base&gt;/.../[\__init__\.py, views.py]
 
 ## Plugin Initialization
 
@@ -79,9 +79,9 @@ Suppose you have defined your app as follows:
 - /app/primary/gallery
 - /app/secondary
 
-As usual each package should contain __init__.py to mark it as a package. In
-this case __init__ is used to provide additional configuration as well.
-__init__.py of /app/primary might look like this:
+As usual each package should contain \__init__\.py to mark it as a package. In
+this case \__init__\ is used to provide additional configuration as well.
+\__init__\.py of /app/primary might look like this:
 
     configuration = {
         'order': ('gallery', 'blog' ),
