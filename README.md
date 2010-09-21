@@ -25,6 +25,7 @@ In addition the plugin has to be initialized at the app urls.py and views.py
 like this:
 
 urls.py:
+
     from django.conf.urls.defaults import patterns
     from navigation import urls
     from navigation.structure import Navigation
@@ -41,6 +42,7 @@ urls.py:
     urls.add_navigation(urlpatterns, navigation, 'app.views')
 
 views.py:
+
     from django.http import HttpResponseRedirect
     from django.contrib.auth.decorators import login_required
     from django.utils.translation import ugettext as _
@@ -79,9 +81,9 @@ Suppose you have defined your app as follows:
 - /app/primary/gallery
 - /app/secondary
 
-As usual each package should contain \__init__\.py to mark it as a package. In
-this case \__init__\ is used to provide additional configuration as well.
-\__init__\.py of /app/primary might look like this:
+As usual each package should contain \_\_init\_\_.py to mark it as a package. In
+this case \_\_init\_\_ is used to provide additional configuration as well.
+\_\_init\_\_.py of /app/primary might look like this:
 
     configuration = {
         'order': ('gallery', 'blog' ),
